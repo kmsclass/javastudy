@@ -11,6 +11,7 @@ public class Test4_A {
 		Scanner scan = new Scanner(System.in);
 		int n1 = scan.nextInt();
 		int n2 = scan.nextInt();
+		System.out.println(n1+","+n2+" 수 중 더 큰수 :"+ (n1>n2?n1:n2));
 		System.out.printf("%d,%d 수 중 더 큰수 :%d\n",n1,n2,(n1>n2?n1:n2));
 	}
 }

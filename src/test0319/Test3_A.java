@@ -19,6 +19,7 @@ public class Test3_A {
 			           	(score>=60)?"D":"F";
 		
 		System.out.println(score + "점 : " + result + "학점");
+		//======
 		System.out.println(score + "점 : " + 
 		((score>=90)?"A":(score>=80)?"B":(score>=70)?"C":(score>=60)?"D":"F")
 				+ "학점");
