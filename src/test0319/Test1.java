@@ -1,4 +1,5 @@
 package test0319;
+//https://github.com/kmsclass
 /*
  * 화면에서 금액입력받아서 500,100,50,10,1원 동전으로 바꾸기.
  * 필요한 동전의 갯수 출력하기. 전체동전은 최소 갯수로 바꾼다.
@@ -12,8 +13,6 @@ package test0319;
  * 1원  : 1개
  */
 public class Test1 {
-
 	public static void main(String[] args) {
 	}
-
 }
