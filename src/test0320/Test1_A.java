@@ -33,12 +33,12 @@ public class Test1_A {
 		System.out.println("문자를 입력하세요");
 		char ch = scan.next().charAt(0); 
 		System.out.print(ch+":");
-		if(ch >= 'A' && ch <= 'Z') {
-			 System.out.println((char)(ch+32));
-		} else if (ch >= 'a' && ch <= 'z') {
-			 System.out.println((char)(ch-32));
-		} else if (ch >= '0' && ch <= '9') {
-			 System.out.println((ch-'0') + 20);
+		if(ch >= 'A' && ch <= 'Z') { //대문자?
+			 System.out.println((char)(ch+32));  //소문자로 출력
+		} else if (ch >= 'a' && ch <= 'z') {  //소문자?
+			 System.out.println((char)(ch-32)); //대문자로 출력
+		} else if (ch >= '0' && ch <= '9') {  //숫자?
+			 System.out.println((ch-'0') + 20); //정수형변형+20 
 		} else {
 			System.out.println("기타문자");
 		}

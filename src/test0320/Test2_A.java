@@ -18,7 +18,7 @@ import java.util.Scanner;
 
 public class Test2_A {
 	public static void main(String[] args) {
-		int srp = (int)(Math.random() * 3) + 1; //시스템 저장 값
+		int srp = (int)(Math.random() * 3) + 1; //시스템 저장 값 (1~3 사이값)
 		System.out.println("가위(1), 바위(2), 보(3) 를 숫자로 입력하세요");
 		Scanner scan = new Scanner(System.in);
 		int mySrp = scan.nextInt();
@@ -27,15 +27,15 @@ public class Test2_A {
 		if (mySrp == srp) 
 			System.out.println("\t비김.");
 		else { //승부판단
-			switch(srp) { 
-			case 1 : 
-				if(mySrp == 2) userwin = true; break;
-			case 2 :
-				if(mySrp == 3) userwin = true; break;
-			case 3 :
-				if(mySrp == 1) userwin = true; break;
+			switch(srp) { //시스템 값
+			case 1 : //가위
+				if(mySrp == 2) userwin = true; break; //주먹
+			case 2 : //주먹
+				if(mySrp == 3) userwin = true; break; //보
+			case 3 : //보
+				if(mySrp == 1) userwin = true; break; //가위
 			}
-			if (userwin)
+			if (userwin) //userwin == true
 				System.out.println(" \t사용자 승리!");
 			else
 				System.out.println(" \t시스템 승리!");
