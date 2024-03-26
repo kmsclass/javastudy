@@ -5,9 +5,11 @@ package test0326;
           String name //학생이름
           int ban,no,kor,eng,math  //반,번호,국어점수,영어점수,수학점수
    멤버 메서드
-          1. getTotal
+          1. int getTotal()
+                return kor+eng+math;
              기능 : 국어,영어,수학 점수의 합 반환
-          2. getAverage
+          2. float getAverage()
+                return getTotal()/3.0
               기능 : 총점(국어,영어,수학 점수의 합) 을 과목수로 나눈 평균 반환
               리턴타입 : float
  */
