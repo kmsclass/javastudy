@@ -20,7 +20,7 @@ public class Test4_A {
 			num[i] = (int) (Math.random() * 100) + 1; //1~100사이의 임의의 수
 		}
 		//3. 정렬
-/*		
+		
 		for (int i = 0; i < num.length; i++) {
 			boolean sorted = true;
 			for (int j = 0; j < num.length - 1 - i; j++) {
@@ -32,12 +32,12 @@ public class Test4_A {
 					sorted = false; 
 				}
 			}
-			if(sorted) break;
+			if(sorted) break; //이미 정렬되어 있음 i반복문을 빠짐
 			for(int n : num)
 				System.out.print(n+" ");
 			System.out.println();
 		}
-*/
+
 		for(int n : num) System.out.print(n+" ");
 		System.out.println();
 		Arrays.sort(num);  //정렬하기

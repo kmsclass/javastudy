@@ -13,6 +13,7 @@ public class Test7_A {
 			return;
 		}
 		for (String a : args) { //command라인의 데이터가 한개인 경우 반복 필요 없음
+			//Integer.parseInt(String) : 숫자형 문자열을 int 형으로 변환
 			int num = Integer.parseInt(a);
 			System.out.print(num + "의 약수 :");
 			for (int i = 1; i <= num; i++) {

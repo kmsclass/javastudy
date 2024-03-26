@@ -23,7 +23,7 @@ public class Test3_A {
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
 		int divnum = num, index=0;
-		for (int d : digit) { //d=2  
+		for (int d : digit) { //d=10 
 			divnum = num;
 			index = 0;
 			arr = new char[32]; 
