@@ -31,7 +31,7 @@ import java.util.Scanner;
 public class Test5_A {
 	public static void main(String[] args) {
 		int[] coin = { 500, 100, 50, 10, 5, 1 };
-		int[] cnt = { 10, 5, 5, 5, 5, 5 };
+		int[] cnt = { 5, 5, 5, 5, 5, 5 };
 		Scanner scan = new Scanner(System.in);
 		System.out.println("금액을 입력하세요");
 		int money = scan.nextInt();
