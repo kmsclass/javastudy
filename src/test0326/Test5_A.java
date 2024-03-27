@@ -7,9 +7,9 @@ package test0326;
                  앞면,뒷면을 side 필드의 값을 변경. 
 */
 class Coin {
-	int side;
-	void flip() {
-		side = (int)(Math.random()*2);
+	int side;  //객체화시 자동 0으로 초기화. 
+	void flip() {  //side 필드의 값을 변경
+		side = (int)(Math.random()*2); //0,1 임의의 수
 	}
 }
 

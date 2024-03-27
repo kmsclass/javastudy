@@ -29,7 +29,7 @@ public class Test1_A {
 		int[][] result =new int[score.length + 1][score[0].length + 1];
 		for (int i = 0; i < score.length; i++) {
 			for (int j = 0; j < score[i].length; j++) {
-				result[i][j] = score[i][j];
+				result[i][j] = score[i][j];  //값 복사
 				result[i][score[i].length] += score[i][j]; //행의 합
 				result[score.length][j] += score[i][j]; //열의 합
 				result[score.length][score[i].length] += score[i][j];

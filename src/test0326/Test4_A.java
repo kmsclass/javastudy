@@ -18,6 +18,10 @@ class Animal {
     void eat() {
 	    System.out.println("맛있게 얌얌");
     }
+    //객체의 문자열화에 관여하는 메서드
+    public String toString() {
+    	return "이름(name):"+name+"\n나이(age):"+age;
+    }
 }
 
 public class Test4_A {
@@ -27,6 +31,8 @@ public class Test4_A {
 		a.age = 20;
 		System.out.println("이름(name):" + a.name);
 		System.out.println("나이(age):" + a.age);
+		a.eat();
+		System.out.println(a); //참조변수를 출력. toString 메서드 호출
 		a.eat();
 	}
 }

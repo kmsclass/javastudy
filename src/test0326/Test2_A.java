@@ -16,20 +16,33 @@ package test0326;
  2.각행의 1차원 배열 객체 생성 
  3.배열의 내부에 숫자 채우기
  4.결과 출력
+ 
+ 숫자   i    j
+   1   9    9
+   2   8    8
+   3   9    8 
+   4   7    7 
+   5   8    7
+   6   9    7
+   7   6    6
+   8   7    6
+   9   8    6
+  10   9    6
+   ...      
 */
 public class Test2_A {
 	public static void main(String[] args) {
-		
-		int[][] arr = new int[10][];
+		int[][] arr = new int[10][];  //10행 
 		for(int i=0;i<arr.length;i++) {
-			arr[i] = new int[i+1];
+			arr[i] = new int[i+1];   //1차원배열의 요소의 갯수 설정
 		}
-		int data = 0;
+		int data = 0;  //배열에 채워질 숫자값
 		for(int j=arr.length-1;j >= 0;j--) {
 			for(int i=j;i < arr.length;i++) {
 				arr[i][j] = ++data;
 			}
 		}
+		//arr 배열을 출력
 		for(int i=0;i < arr.length;i++) {
 			for(int j=0;j < arr[i].length;j++) {
 				System.out.printf("%3d",arr[i][j]);
@@ -53,8 +66,6 @@ public class Test2_A {
 				System.out.printf("%5d",arr2[i][j]);
 			}
 			System.out.println();
-		}
-		
+		}		
 	}
-
 }
