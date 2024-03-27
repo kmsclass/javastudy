@@ -10,7 +10,7 @@ package test0327;
  *     (2) double length(): 원의 둘레 리턴. Math.PI 상수 사용
  *     (4) void scale(double m): 반지름을 m배 확대/축소. r=r*m
  *     (5) String toString() :
- *         1번원 : 반지름:10, 넓이:314.xxx, 둘레:xxx.xxx
+ *         1번원 : 반지름:100, 넓이:314.xxx, 둘레:xxx.xxx
  *         ... */
 public class Test4 {
 	public static void main(String[] args) {
