@@ -29,7 +29,7 @@ package test0327;
 class Coin {
 	int side,sno;
 	static int cnt;
-	Coin() {
+	Coin() {  //생성자. 동전번호 초기화
 		sno = ++cnt;
 	}
 	void flip() {
@@ -41,10 +41,10 @@ class Coin {
 }
 public class Test2_A {
 	public static void main(String[] args) {
-		int[] cnt = new int[2];
-		Coin[] coins = new Coin[10];
+		int[] cnt = new int[2];  //동전갯수저장
+		Coin[] coins = new Coin[10];  //참조변수 10개인 배열
 		for(int i=0;i<coins.length;i++) {
-			coins[i] = new Coin();
+			coins[i] = new Coin();  //Coin 객체 생성
 			coins[i].flip();
 			++cnt[coins[i].side];
 			System.out.println(coins[i]);

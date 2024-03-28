@@ -16,8 +16,8 @@ class Circle {
 	int r,no;
 	static int count;
 	Circle(int a) {
-		r = a;
-		no = ++count; 
+		r = a;   //반지름 설정
+		no = ++count; //원의 번호
 	}
 	double area() {
 		return r*r * Math.PI;
@@ -26,10 +26,14 @@ class Circle {
 		return 2*r * Math.PI;
 	}
 	void scale(double m) {
-		r *= m;
+		r *= m;  //r = (int)(r * m);
 	}
 	public String toString() {
-		return no + "번원 : 반지름:" +r + ",넓이:" + area() + ", 둘레:" + length(); 
+//		return no + "번원 : 반지름:" +r + ",넓이:" + area() + ", 둘레:" + length(); 
+		//String.format(형식화문자열) => String 형으로 리턴
+		// System.out.printf(형식화문자열) 사용법이 동일
+		return String.format("%d번원 : 반지름:%d,넓이:%,.2f,둘레:%,.2f",
+				    no,r,area(),length()); 
 	}
 }
 public class Test4_A {

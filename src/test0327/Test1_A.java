@@ -39,7 +39,7 @@ public class Test1_A {
 		for(int i=0;i<rarr.length;i++) {
 			int width = (int)(Math.random() * 11) + 20;
 			int height =(int)(Math.random() * 11) + 20; 
-			rarr[i] = new Rectangle(width,height);
+			rarr[i] = new Rectangle(width,height); //Rectangle 객체 생성
 			totarea += rarr[i].area(); 
 			totlength += rarr[i].length(); 
 		}

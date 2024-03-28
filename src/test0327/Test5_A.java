@@ -27,8 +27,10 @@ public class Test5_A {
 			else mycnt=0;
 			if(youCoin.side == 0) youcnt++;
 			else youcnt=0;
-			System.out.println((myCoin.side==0?"앞면":"뒷면")+"\t"+(youCoin.side==0?"앞면":"뒷면"));
+			System.out.println
+			((myCoin.side==0?"앞면":"뒷면")+"\t"+(youCoin.side==0?"앞면":"뒷면"));
 		}
+		//mycnt 또는 youcnt 값이 둘,또는 하나는 3인 경우
 		if(mycnt == youcnt) System.out.println("비김");
 		else if (mycnt == 3)  System.out.println("myCoin 승리");
 		else System.out.println("youCoin 승리");
